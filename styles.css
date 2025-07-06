@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Adamina&family=Anton&display=swap');
+
+:root{
+    --primario: rgba(0, 0, 0, 0.575);
+    --primarioTitulo: rgba(215, 201, 201, 0.4);
+    --secundario: rgba(255, 255, 255, 0.479);
+    --gris: rgba(245, 248, 248, 0.61);
+    --negro: #000;
+    --blanco: rgba(255, 255, 255, 0.911);
+}
+html{
+    font-size: 62.5%;
+    height: 100%;
+}
+*, ::before, ::after {
+	box-sizing: inherit;
+}
+
+body{
+    background-image: url(IMG/cámaradegas.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    max-width: 120rem;
+}
+
+.contenedor{
+    color: var(--primarioTitulo);
+    padding: .5rem;
+    display: flex;
+    justify-content: center;  
+    margin-top: 5rem;  
+}
+h1{   
+    /* display: flex;
+    justify-content: center; */
+    width: max-content;
+    font-family: "Anton", sans-serif;
+    text-align: center;
+    font-size: 6rem;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+@media (min-width: 768px) {
+    color: var(--gris);
+}
+
+.navegacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: .5rem;
+}
+
+@media (min-width: 768px) {
+    .navegacion{
+        flex-direction: row;
+        justify-content: space-evenly;
+        /* margin-bottom: 2rem; */
+        margin: 1rem 0;
+    }   
+}
+
+a{
+    font-family: "Adamina", serif;
+    font-weight: 400;
+    background-color: var(--primario);
+    color: var(--secundario);
+    text-decoration: none;
+    font-size: 2rem;
+    padding: .5rem;  
+    margin: .3rem;
+    text-align: center;
+}
+
+.navegacion a:hover{
+    background-color: var(--secundario);
+    color: var(--primario);
+    transition: .5s;
+}
+
+.prox{
+    display: block;
+    text-align: center;
+    color: var(--primarioTitulo);
+    font-size: 1.5rem;
+    
+}
+
+p{
+    align-items: center center;
+    font-family: "Adamina", serif;
+    font-weight: 400;
+    margin-top: 20rem;    
+    text-align: center;
+}
+
